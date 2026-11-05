@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>PPCI em Goiânia | Projeto e Alvará do Corpo de Bombeiros – Felipe Lopes Arquitetura</title>
+<meta name="description" content="Projeto de PPCI, regularização e alvará (CERCON) do Corpo de Bombeiros em Goiânia. Arquiteto registrado no CAU. Orçamento grátis pelo WhatsApp.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#1B2632">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="PPCI em Goiânia | Felipe Lopes Arquitetura">
+<meta property="og:description" content="Projeto de PPCI, regularização e alvará do Corpo de Bombeiros em Goiânia, com acompanhamento técnico do processo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "telephone": "+5562993156167",
+  "email": "arq.felipevieira@gmail.com",
+  "name": "Felipe Lopes Arquitetura",
+  "description": "Projetos de PPCI, regularização e alvará do Corpo de Bombeiros em Goiânia.",
+  "areaServed": [{ "@type": "State", "name": "Goiás" }, { "@type": "City", "name": "Goiânia" }],
+  "address": { "@type": "PostalAddress", "addressLocality": "Goiânia", "addressRegion": "GO", "addressCountry": "BR" }
+}
+</script>
+
+<style>
+/* ========== VARIÁVEIS ========== */
+:root{
+  --navy:#1B2632;
+  --steel:#2C3B4D;
+  --wine:#A35139;
+   --rust:#A35139;
+  --gold:#FFB162;
+  --cream:#EEE9DF;
+  --white:#C9C1B1;
+  --wa:#25D366;
+  --sand:#C9C1B1;
+  --h:68px;
+  --font-title:"Montserrat","Poppins",system-ui,sans-serif;
+  --font-body:"Inter","Open Sans",system-ui,sans-serif;
+}
+
+/* ========== BASE ========== */
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--font-body);font-size:17px;line-height:1.6;color:var(--navy);background:var(--cream)}
+img,svg{max-width:100%;display:block}
+h1,h2,h3{font-family:var(--font-title);line-height:1.15;margin:0;font-weight:700}
+p{margin:0}
+a{color:inherit}
+section[id]{scroll-margin-top:var(--h)}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.container{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+.sec{padding:clamp(56px,8vw,96px) 0}
+.bg-navy{background:var(--navy);color:var(--cream)}
+.bg-cream{background:var(--cream);color:var(--navy)}
+.bg-white{background:var(--white);color:var(--navy)}
+.bg-wine{background:var(--wine);color:var(--cream)}
+.bg-gold{background:var(--gold);color:var(--navy)}
+.sec-title{font-size:clamp(1.7rem,3.4vw,2.4rem);font-weight:800;max-width:22ch}
+.sec-title.center{margin-left:auto;margin-right:auto;text-align:center}
+.sec-sub{margin-top:14px;max-width:60ch;font-size:1.05rem;opacity:.9}
+.sec-head{margin-bottom:44px}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ========== BOTÕES ========== */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:10px;border:2px solid transparent;font-family:var(--font-title);font-weight:700;font-size:1rem;line-height:1.2;text-align:center;text-decoration:none;cursor:pointer;transition:transform .15s ease,background-color .15s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn-wa{background:var(--wa);color:var(--navy)}
+.btn-wa:hover{background:#3be07b}
+.btn-ghost{border-color:var(--gold);color:var(--cream);background:transparent}
+.btn-ghost:hover{background:rgba(201,179,126,.15)}
+.btn-big{min-height:60px;padding:0 34px;font-size:1.1rem}
+.btn-block{width:100%}
+.btn .ico{width:22px;height:22px;flex:none}
+
+/* ========== MENU ========== */
+.header{position:sticky;top:0;z-index:50;background:var(--navy);color:var(--cream);height:var(--h);border-bottom:1px solid rgba(201,179,126,.25)}
+.header-in{height:100%;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-family:var(--font-title);font-weight:700;font-size:1.05rem;white-space:nowrap}
+.brand svg{width:34px;height:34px}
+.nav{display:flex;align-items:center;gap:30px}
+.nav a.nav-link{text-decoration:none;font-weight:500;font-size:.98rem;padding:6px 0;border-bottom:2px solid transparent}
+.nav a.nav-link:hover{border-bottom-color:var(--gold)}
+.nav .btn{min-height:44px;padding:0 20px;font-size:.95rem}
+.menu-btn{display:none;background:none;border:0;color:var(--cream);width:44px;height:44px;cursor:pointer;padding:10px}
+.menu-btn span{display:block;height:3px;background:var(--cream);border-radius:2px;margin:5px 0}
+
+/* ========== HERO ========== */
+.hero{padding:clamp(48px,7vw,88px) 0}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(2.2rem,4.8vw,3.5rem);font-weight:800;letter-spacing:-.015em}
+.hero-sub{margin-top:22px;font-size:1.15rem;max-width:46ch;opacity:.92}
+.hero-actions{margin-top:34px;display:flex;flex-wrap:wrap;gap:14px}
+.plan{width:100%;height:auto}
+.draw{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.8s .25s ease-out forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+
+/* ========== FAIXA DE CONFIANÇA ========== */
+.trust{padding:22px 0}
+.trust-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.trust-list li{display:flex;align-items:center;gap:12px;font-family:var(--font-title);font-weight:700;font-size:.95rem;line-height:1.3}
+.trust-list svg{width:26px;height:26px;flex:none}
+
+/* ========== ÁREA DE ATUAÇÃO ========== */
+.area-atendimento{padding:clamp(42px,6vw,66px) 0;border-bottom:1px solid rgba(44,59,77,.14)}
+.area-in{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:44px}
+.area-eyebrow{display:inline-block;margin-bottom:12px;color:var(--rust);font-family:var(--font-title);font-size:.76rem;font-weight:800;letter-spacing:.14em}
+.area-copy h2{font-size:clamp(1.65rem,3vw,2.25rem);max-width:24ch}
+.area-copy p{margin-top:12px;max-width:58ch;font-size:1rem;opacity:.86}
+
+/* ========== MAPA: BRASIL COM GOIÁS EM DESTAQUE ========== */
+.area-map{margin:0;display:flex;justify-content:center}
+.area-map svg{display:block;width:100%;max-width:310px;height:auto;overflow:visible}
+.br-shape{fill:rgba(44,59,77,.10);stroke:var(--steel);stroke-width:1.4;stroke-linejoin:round}
+.go-shape{fill:var(--rust);stroke:#7d3a27;stroke-width:1.4;stroke-linejoin:round}
+.go-dot{fill:var(--gold);stroke:var(--navy);stroke-width:1.2}
+.go-pulse{fill:none;stroke:var(--rust);stroke-width:1.6;transform-box:fill-box;transform-origin:center;animation:go-pulse 2.4s ease-out infinite}
+@keyframes go-pulse{0%{transform:scale(.5);opacity:.9}100%{transform:scale(3.4);opacity:0}}
+.go-leader{fill:none;stroke:var(--rust);stroke-width:1;stroke-dasharray:3 3}
+.go-label{font-family:var(--font-title);font-weight:800;font-size:13px;fill:var(--navy)}
+.go-sub{font-family:var(--font-body);font-size:7.5px;font-weight:700;letter-spacing:.08em;fill:var(--rust)}
+.br-label{font-family:var(--font-title);font-weight:700;font-size:8px;letter-spacing:.2em;fill:rgba(44,59,77,.5)}
+@media (prefers-reduced-motion:reduce){.go-pulse{animation:none;opacity:.5}}
+
+/* ========== PARCERIAS ========== */
+.partners{padding:clamp(36px,5vw,56px) 0;background:rgba(44,59,77,.07);border-top:1px solid rgba(44,59,77,.12);border-bottom:1px solid rgba(44,59,77,.12)}
+.partners-in{display:grid;grid-template-columns:1.1fr 1fr;gap:36px;align-items:center}
+.partners h2{font-size:clamp(1.4rem,2.6vw,1.9rem);font-weight:800}
+.partners-copy p{margin-top:10px;max-width:52ch;font-size:1rem;color:var(--steel)}
+.partners-side{display:grid;gap:18px;justify-items:start}
+.partner-chips{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.partner-chips li{border:1.5px solid rgba(44,59,77,.35);border-radius:999px;padding:7px 14px;font-weight:600;font-size:.88rem}
+@media (max-width:860px){.partners-in{grid-template-columns:1fr;gap:22px}}
+
+/* ========== SERVIÇOS ========== */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.card{background:var(--white);border-top:5px solid var(--steel);border-radius:10px;padding:22px 22px 24px;display:flex;flex-direction:column;box-shadow:0 1px 0 rgba(17,42,70,.08),0 10px 28px -16px rgba(17,42,70,.35)}
+.ill{aspect-ratio:3/2;border-radius:8px;overflow:hidden;background:var(--sand);margin-bottom:20px}
+.ill svg{width:100%;height:100%}
+.card h3{font-size:1.2rem}
+.card p{margin:8px 0 22px;font-size:.98rem;flex:1}
+
+/* ========== FAIXA CHAMADA (VINHO) ========== */
+.band{padding:clamp(40px,6vw,64px) 0}
+.band-in{display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap}
+.band h2{font-size:clamp(1.5rem,3vw,2.1rem);font-weight:800;max-width:30ch}
+
+/* ========== COMO FUNCIONA ========== */
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:26px;counter-reset:step}
+.step{position:relative;padding-top:4px}
+.step::before{counter-increment:step;content:counter(step);display:grid;place-items:center;width:52px;height:52px;border-radius:50%;background:var(--gold);color:var(--navy);font-family:var(--font-title);font-weight:800;font-size:1.3rem;position:relative;z-index:1}
+.step:not(:last-child)::after{content:"";position:absolute;top:30px;left:64px;right:-14px;height:2px;background:var(--gold);opacity:.7}
+.step h3{margin:18px 0 8px;font-size:1.15rem}
+.step p{font-size:.98rem}
+
+/* ========== PARA QUEM ATENDO ========== */
+.chips{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:12px}
+.chips li{background:var(--gold);color:var(--navy);font-family:var(--font-title);font-weight:700;font-size:.98rem;padding:12px 20px;border-radius:999px}
+
+/* ========== POR QUE ME ESCOLHER ========== */
+.why{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.why-card{background:var(--white);border-left:6px solid var(--gold);border-radius:4px 12px 12px 4px;padding:28px 26px}
+.why-card svg{width:40px;height:40px;margin-bottom:16px;stroke:var(--steel);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.why-card h3{font-size:1.15rem;margin-bottom:8px}
+
+/* ========== FAQ ========== */
+.faq{max-width:820px}
+.faq details{border-bottom:2px solid rgba(47,102,144,.25)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 0;font-family:var(--font-title);font-weight:700;font-size:1.08rem}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";flex:none;display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--navy);color:var(--cream);font-size:1.4rem;line-height:1;transition:transform .2s ease,background-color .2s ease}
+.faq details[open] summary::after{transform:rotate(45deg);background:var(--wine)}
+.faq .ans{padding:0 54px 24px 0;max-width:70ch}
+.faq-cta{margin-top:36px}
+
+/* ========== OUTROS SERVIÇOS ========== */
+.other{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:8px}
+.other-item{border-top:2px solid var(--navy);padding-top:14px}
+.other-item h3{font-size:1.05rem;margin-bottom:6px}
+.other-item a{font-weight:600;color:var(--wine);text-underline-offset:4px}
+
+/* ========== CHAMADA FINAL ========== */
+.final{text-align:center}
+.final h2{font-size:clamp(1.8rem,4vw,2.8rem);font-weight:800;max-width:20ch;margin:0 auto}
+.final p{margin:16px auto 34px;max-width:48ch;font-size:1.1rem;opacity:.92}
+
+/* ========== RODAPÉ ========== */
+.footer{background:var(--navy);color:var(--cream);border-top:4px solid var(--gold);padding:48px 0 40px}
+.footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:32px}
+.footer h3{font-size:1rem;margin-bottom:12px;color:var(--gold)}
+.footer ul{list-style:none;margin:0;padding:0;display:grid;gap:8px;font-size:.96rem}
+.footer a{text-underline-offset:4px}
+.footer .brand{margin-bottom:14px}
+.footer .legal{margin-top:36px;padding-top:20px;border-top:1px solid rgba(201,179,126,.3);font-size:.88rem;opacity:.85;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+.link-btn{background:none;border:0;color:inherit;font:inherit;text-decoration:underline;text-underline-offset:4px;cursor:pointer;padding:0}
+
+/* ========== WHATSAPP FLUTUANTE E BARRA MÓVEL ========== */
+.wa-float{position:fixed;right:22px;bottom:22px;z-index:60;display:flex;align-items:center;gap:10px;height:66px;padding:0 24px 0 16px;border-radius:999px;background:var(--wa);color:#0B2E18;border:3px solid #fff;font-family:var(--font-title);font-weight:800;font-size:1rem;line-height:1;text-decoration:none;box-shadow:0 10px 28px -6px rgba(0,0,0,.55),0 0 0 0 rgba(37,211,102,.6);animation:wa-in .6s 1.2s cubic-bezier(.2,.9,.3,1.2) backwards,wa-pulse 2.2s 2s infinite;transition:transform .15s ease}
+.wa-float:hover{transform:scale(1.06)}
+.wa-float svg{width:36px;height:36px;flex:none;fill:#fff;filter:drop-shadow(0 1px 1px rgba(0,0,0,.3))}
+.wa-float-label{white-space:nowrap}
+@keyframes wa-in{from{opacity:0;transform:translateY(24px) scale(.9)}to{opacity:1;transform:none}}
+@keyframes wa-pulse{0%{box-shadow:0 10px 28px -6px rgba(0,0,0,.55),0 0 0 0 rgba(37,211,102,.6)}70%,100%{box-shadow:0 10px 28px -6px rgba(0,0,0,.55),0 0 0 22px rgba(37,211,102,0)}}
+@media (prefers-reduced-motion:reduce){.wa-float{animation:none;transition:none}}
+.wa-bar{display:none}
+
+/* ========== PRIVACIDADE ========== */
+
+/* ========== ÍCONES DOS SERVIÇOS ========== */
+.card{border-top-color:var(--steel)}
+.card h3{color:var(--navy)}
+
+/* ========== OUTROS SERVIÇOS: SEÇÃO EM DESTAQUE ========== */
+.other-services{position:relative;isolation:isolate;overflow:hidden;padding:clamp(68px,8vw,100px) 0;background:linear-gradient(125deg,#f2e7d4 0%,var(--sand) 44%,#e4e7e7 100%);color:var(--navy);border-top:1px solid rgba(44,59,77,.12);border-bottom:1px solid rgba(44,59,77,.12)}
+.other-services::before{content:"";position:absolute;z-index:-1;width:390px;height:390px;border-radius:50%;right:-130px;top:-190px;background:radial-gradient(circle,rgba(163,81,57,.16) 0%,rgba(163,81,57,0) 70%);pointer-events:none}
+.other-services::after{content:"";position:absolute;z-index:-1;width:300px;height:300px;border-radius:50%;left:-150px;bottom:-180px;background:radial-gradient(circle,rgba(44,59,77,.12) 0%,rgba(44,59,77,0) 72%);pointer-events:none}
+.other-services-head{max-width:850px;margin-bottom:40px}
+.other-services-head .sec-title{max-width:20ch;font-size:clamp(2rem,4vw,3rem);line-height:1.08}
+.other-services-head p{font-size:1.08rem;max-width:68ch}
+.other-services-head{max-width:760px;margin-bottom:34px}
+.other-services .eyebrow{display:inline-block;margin-bottom:13px;color:var(--rust);font-family:var(--font-title);font-size:.78rem;font-weight:800;letter-spacing:.12em}
+.other-services-head .sec-title{max-width:24ch}
+.other-services-head p{margin-top:15px;max-width:62ch;font-size:1.05rem;opacity:.88}
+.other{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:0}
+.other-item{display:flex;gap:16px;align-items:flex-start;min-height:225px;padding:28px 24px;background:rgba(255,253,248,.88);border:1px solid rgba(44,59,77,.13);border-top:4px solid var(--rust);border-radius:14px;box-shadow:0 18px 36px -28px rgba(27,38,50,.52);transition:transform .2s ease,box-shadow .2s ease}
+.other-item:hover{transform:translateY(-4px);box-shadow:0 22px 38px -26px rgba(27,38,50,.55)}
+.other-icon{width:54px;height:54px;flex:0 0 54px;display:grid;place-items:center;border-radius:14px;background:linear-gradient(145deg,var(--navy),#43576b);color:var(--cream);box-shadow:0 6px 14px rgba(27,38,50,.15)}
+.other-icon svg{width:27px;height:27px;fill:none;stroke:var(--cream);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.other-item h3{font-size:1.08rem;margin:2px 0 9px}
+.other-item p{font-size:.93rem;line-height:1.55;margin:0 0 17px;opacity:.86}
+.other-item a{font-size:.92rem;font-weight:800;color:var(--rust);text-underline-offset:4px}
+.other-item a span{display:inline-block;margin-left:3px;transition:transform .15s ease}
+.other-item a:hover span{transform:translateX(4px)}
+
+/* ========== RESPONSIVO ========== */
+@media (max-width:980px){
+  .area-in{grid-template-columns:1fr 1fr;gap:28px}
+
+  .cards{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:repeat(2,1fr);row-gap:36px}
+  .step:nth-child(2)::after{display:none}
+  .trust-list{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:860px){
+  .menu-btn{display:block}
+  .nav{display:none;position:absolute;top:var(--h);left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:var(--navy);padding:8px 20px 22px;border-bottom:1px solid rgba(201,179,126,.25)}
+  .nav.open{display:flex}
+  .nav a.nav-link{padding:16px 0;border-bottom:1px solid rgba(201,179,126,.2)}
+  .nav .btn{margin-top:16px}
+  .hero-grid{grid-template-columns:1fr;gap:36px}
+  .area-in{grid-template-columns:1fr;gap:28px}
+  .why{grid-template-columns:1fr}
+  .other{grid-template-columns:1fr}
+  .other-item{min-height:0}
+  .footer-grid{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  body{font-size:16px;padding-bottom:calc(76px + env(safe-area-inset-bottom,0px))}
+  .cards{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr}
+  .step::after{display:none}
+  .band-in{flex-direction:column;align-items:flex-start}
+  .other-item{padding:22px 18px}
+  .band .btn,.hero-actions .btn{width:100%}
+  .wa-float{display:none}
+  .wa-bar{display:block;position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));background:var(--navy);border-top:1px solid rgba(201,179,126,.35)}
+  .faq .ans{padding-right:0}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .draw{animation:none;stroke-dashoffset:0}
+  .btn,.faq summary::after{transition:none}
+}
+
+
+
+/* ========== CHAMADA ACOLHEDORA ========== */
+.pain{padding:clamp(56px,8vw,88px) 0;background:var(--cream);color:var(--navy)}
+.pain-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:56px;align-items:start}
+.pain h2{font-size:clamp(1.6rem,3.2vw,2.3rem);font-weight:800;max-width:20ch}
+.pain-lead{margin-top:16px;max-width:46ch;color:var(--steel);font-size:1.04rem}
+.pain-note{margin-top:22px;font-family:var(--font-title);font-weight:700}
+.btn-outline{margin-top:18px;border-color:var(--navy);color:var(--navy);background:transparent}
+.btn-outline:hover{background:var(--navy);color:var(--cream)}
+.pain-list{list-style:none;margin:0;padding:0;display:grid;gap:26px}
+.pain-list li{padding:2px 0 2px 22px;border-left:3px solid var(--rust)}
+.pain-list h3{font-size:1.08rem;margin-bottom:6px}
+.pain-list p{color:var(--steel);font-size:.98rem}
+@media (max-width:860px){.pain-grid{grid-template-columns:1fr;gap:32px}}
+
+/* ========== ÍCONES VETORIAIS ANIMADOS DOS SERVIÇOS ========== */
+.service-icon{position:relative;display:block;aspect-ratio:16/9;margin-bottom:20px;border-radius:10px;overflow:hidden;border:1px solid rgba(255,177,98,.25);background:radial-gradient(120% 100% at 100% 0%,rgba(163,81,57,.5) 0%,rgba(163,81,57,0) 58%),radial-gradient(90% 90% at 0% 100%,rgba(255,177,98,.12) 0%,rgba(255,177,98,0) 60%),linear-gradient(135deg,#27384c 0%,#1B2632 100%)}
+.service-icon::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(238,233,223,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(238,233,223,.06) 1px,transparent 1px);background-size:16px 16px;-webkit-mask-image:radial-gradient(ellipse at center,#000 35%,transparent 92%);mask-image:radial-gradient(ellipse at center,#000 35%,transparent 92%);pointer-events:none}
+.service-icon svg.ic{position:relative;z-index:1;display:block;width:100%;height:100%;max-width:none;fill:none;stroke:#EEE9DF;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;transition:transform .35s ease}
+.card:hover .service-icon svg.ic{transform:scale(1.035)}
+
+.ic .soft{fill:rgba(238,233,223,.07)}
+.ic .dim{opacity:.4}
+.ic .g{stroke:#FFB162}
+.ic .r{stroke:#E0734F}
+.ic .fg{fill:#FFB162;stroke:none}
+.ic .fr{fill:#E0734F;stroke:none}
+.ic .fc{fill:#EEE9DF;stroke:none}
+.ic .ln{fill:rgba(238,233,223,.34);stroke:none}
+.ic .lnd{fill:rgba(238,233,223,.18);stroke:none}
+.ic .tx{font-family:Montserrat,Arial,sans-serif;font-weight:800;stroke:none;text-anchor:middle}
+
+/* movimento */
+.ic .scan{animation:ic-scan 5.2s ease-in-out infinite}
+.ic .tick{stroke-dasharray:1;animation:ic-tick 5.2s ease-in-out infinite both}
+.ic .draw2{stroke-dasharray:1;animation:ic-draw 7s ease-in-out infinite alternate}
+.ic .rip{opacity:.6;transform-box:fill-box;transform-origin:center;animation:ic-rip 2.6s ease-out infinite}
+.ic .flow{stroke-dasharray:5 6;animation:ic-flow 1s linear infinite}
+.ic .flick{transform-box:fill-box;transform-origin:50% 100%;animation:ic-flick 1.4s ease-in-out infinite}
+.ic .stamp{transform-box:fill-box;transform-origin:center;transform:rotate(-14deg);animation:ic-stamp 5.2s ease-in infinite both}
+.ic .pop{transform-box:fill-box;transform-origin:center;animation:ic-pop 4.8s ease-in-out infinite both}
+.ic .breathe{transform-box:fill-box;transform-origin:center;animation:ic-breathe 2.8s ease-in-out infinite}
+.ic .shine{animation:ic-shine 4.6s ease-in-out infinite}
+.ic .lit{animation:ic-lit 4.8s ease-in-out infinite both}
+.ic .bolt{transform-box:fill-box;transform-origin:center;animation:ic-bolt 1.4s ease-in-out infinite}
+.ic .chg{transform-box:fill-box;transform-origin:left center;animation:ic-chg 3.6s ease-in-out infinite}
+
+@keyframes ic-scan{0%,100%{transform:translate(0,0)}50%{transform:translate(-92px,2px)}}
+@keyframes ic-tick{0%,6%{stroke-dashoffset:1}18%,86%{stroke-dashoffset:0}96%,100%{stroke-dashoffset:1}}
+@keyframes ic-draw{0%{stroke-dashoffset:1}40%,100%{stroke-dashoffset:0}}
+@keyframes ic-rip{0%{transform:scale(.45);opacity:.9}100%{transform:scale(1.7);opacity:0}}
+@keyframes ic-flow{to{stroke-dashoffset:-11}}
+@keyframes ic-flick{0%,100%{transform:scale(1,1)}25%{transform:scale(.93,1.09)}50%{transform:scale(1.05,.95)}75%{transform:scale(.96,1.06)}}
+@keyframes ic-stamp{0%,12%{opacity:0;transform:rotate(-14deg) scale(1.9)}22%{opacity:1;transform:rotate(-14deg) scale(.92)}28%,88%{opacity:1;transform:rotate(-14deg) scale(1)}100%{opacity:0;transform:rotate(-14deg) scale(1)}}
+@keyframes ic-pop{0%,8%{transform:scale(0)}18%{transform:scale(1.15)}26%,90%{transform:scale(1)}100%{transform:scale(0)}}
+@keyframes ic-breathe{0%,100%{transform:scale(1)}50%{transform:scale(1.07)}}
+@keyframes ic-shine{0%{transform:translateX(0)}60%,100%{transform:translateX(300px)}}
+@keyframes ic-lit{0%,10%{fill-opacity:.12}30%,80%{fill-opacity:.95}100%{fill-opacity:.12}}
+@keyframes ic-bolt{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.55;transform:scale(.86)}}
+@keyframes ic-chg{0%{transform:scaleX(.12)}80%,100%{transform:scaleX(1)}}
+
+.card:hover .ic .scan{animation-duration:2.8s}
+.card:hover .ic .shine{animation-duration:2.2s}
+.card:hover .ic .rip{animation-duration:1.5s}
+
+@media (prefers-reduced-motion:reduce){
+  .ic *{animation:none!important}
+  .service-icon svg.ic{transition:none}
+}
+
+@media (min-width:641px){.footer{padding-bottom:112px}}
+.legal a{text-decoration:underline;text-underline-offset:4px}
+.disclaimer{margin-top:16px;max-width:80ch;font-size:.78rem;line-height:1.5;color:rgba(238,233,223,.62)}
+</style>
+</head>
+
+<body>
+
+<!-- Padrão de janelas reutilizado nas ilustrações -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <pattern id="win" width="16" height="20" patternUnits="userSpaceOnUse"><rect x="4" y="5" width="8" height="11" rx="1.5" fill="#EEE9DF"/></pattern>
+    <symbol id="wa-icon" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></symbol>
+    <symbol id="check-icon" viewBox="0 0 26 26"><circle cx="13" cy="13" r="12" fill="#1B2632"/><path d="M7.5 13.5l4 4 7-8" fill="none" stroke="#FFB162" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </defs>
+</svg>
+
+<!-- 1. MENU FIXO -->
+<header class="header">
+  <div class="container header-in">
+    <a class="brand" href="#topo" aria-label="Felipe Lopes Arquitetura, voltar ao início">
+      <svg viewBox="0 0 36 36" aria-hidden="true"><rect x="2" y="2" width="22" height="22" fill="#2C3B4D"/><rect x="12" y="12" width="22" height="22" fill="#FFB162"/><rect x="12" y="12" width="12" height="12" fill="#EEE9DF"/></svg>
+      <span>Felipe Lopes Arquitetura</span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <a class="nav-link" href="#servicos">Serviços</a>
+      <a class="nav-link" href="#como-funciona">Como funciona</a>
+      <a class="nav-link" href="#duvidas">Dúvidas</a>
+      <a href="https://wa.me/5562993156167?text=Ol%C3%A1%2C%20Felipe!%20Vim%20pelo%20site%20e%20quero%20um%20or%C3%A7amento%20de%20PPCI." target="_blank" rel="noopener" class="btn btn-wa" data-wa="geral"><svg class="ico" fill="currentColor" aria-hidden="true"><use href="#wa-icon"/></svg>WhatsApp</a>
+    </nav>
+  </div>
+</header>
+
+<main id="topo">
+
+<!-- 2. HERO -->
+<section class="hero bg-navy">
+  <div class="container hero-grid">
+    <div>
+      <h1>Projeto de PPCI e alvará dos Bombeiros em Goiânia</h1>
+      <p class="hero-sub">Arquiteto especialista em segurança contra incêndio. Elaboro o projeto, realizo o protocolo no CBMGO e faço todo o acompanhamento técnico do processo.</p>
+      <div class="hero-actions">
+        <a href="https://wa.me/5562993156167?text=Ol%C3%A1%2C%20Felipe!%20Vim%20pelo%20site%20e%20quero%20um%20or%C3%A7amento%20de%20PPCI." target="_blank" rel="noopener" class="btn btn-wa btn-big" data-wa="geral"><svg class="ico" fill="currentColor" aria-hidden="true"><use href="#wa-icon"/></svg>Pedir orçamento no WhatsApp</a>
+        <a class="btn btn-ghost btn-big" href="#servicos">Ver serviços</a>
+      </div>
+    </div>
+
+    <!-- Prancha de PPCI: elemento central do hero -->
+    <svg class="plan" viewBox="0 0 560 470" role="img" aria-label="Planta de um imóvel com sprinklers, extintor e saída de emergência indicados">
+      <defs>
+        <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#2C3B4D" stroke-opacity=".28" stroke-width="1"/></pattern>
+      </defs>
+      <rect x="6" y="6" width="548" height="458" rx="6" fill="#1B2632" stroke="#FFB162" stroke-width="2"/>
+      <rect x="8" y="8" width="544" height="454" rx="5" fill="url(#grid)"/>
+
+      <g fill="none" stroke="#EEE9DF" stroke-width="6" stroke-linecap="square">
+        <path class="draw" pathLength="1" d="M70 80H470V330H70Z"/>
+        <path class="draw" pathLength="1" d="M70 200H210M260 200H470"/>
+        <path class="draw" pathLength="1" d="M300 80V200"/>
+        <path class="draw" pathLength="1" d="M200 200V258M200 300V330"/>
+      </g>
+
+      <g fill="none" stroke="#FFB162" stroke-width="2.5" stroke-dasharray="7 6">
+        <path d="M185 140H385M235 140V265M135 265H335"/>
+      </g>
+      <g fill="#FFB162">
+        <circle cx="185" cy="140" r="8"/><circle cx="385" cy="140" r="8"/>
+        <circle cx="135" cy="265" r="8"/><circle cx="335" cy="265" r="8"/>
+      </g>
+      <g fill="none" stroke="#FFB162" stroke-width="1.5" opacity=".7">
+        <circle cx="185" cy="140" r="16"/><circle cx="385" cy="140" r="16"/>
+        <circle cx="135" cy="265" r="16"/><circle cx="335" cy="265" r="16"/>
+      </g>
+
+      <circle cx="440" cy="300" r="11" fill="#A35139" stroke="#EEE9DF" stroke-width="2.5"/>
+      <rect x="82" y="304" width="52" height="16" rx="2" fill="#FFB162"/>
+      <text x="108" y="316" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="700" fill="#1B2632">SAÍDA</text>
+
+      <g stroke="#EEE9DF" stroke-width="1.5" fill="none">
+        <path d="M70 360H470M70 352V368M470 352V368"/>
+        <path d="M500 80V330M492 80H508M492 330H508"/>
+      </g>
+      <g font-family="Inter,Arial,sans-serif" font-size="13" fill="#EEE9DF" text-anchor="middle">
+        <text x="270" y="384">12,40 m</text>
+        <text transform="translate(528 205) rotate(90)">8,10 m</text>
+      </g>
+
+      <g font-family="Inter,Arial,sans-serif" font-size="12" fill="#EEE9DF">
+        <circle cx="76" cy="425" r="6" fill="#FFB162"/><text x="90" y="429">Sprinkler</text>
+        <circle cx="166" cy="425" r="6" fill="#A35139" stroke="#EEE9DF" stroke-width="1.5"/><text x="180" y="429">Extintor</text>
+      </g>
+      <rect x="318" y="400" width="214" height="46" fill="none" stroke="#FFB162" stroke-width="1.5"/>
+      <text x="330" y="419" font-family="Inter,Arial,sans-serif" font-size="11" fill="#EEE9DF">Planta de prevenção contra incêndio</text>
+      <text x="330" y="437" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="700" fill="#FFB162">Prancha 01</text>
+    </svg>
+  </div>
+</section>
+
+<!-- 3. FAIXA DE CONFIANÇA -->
+<section class="trust bg-gold" aria-label="Diferenciais">
+  <div class="container">
+    <ul class="trust-list">
+      <li><svg aria-hidden="true"><use href="#check-icon"/></svg>Arquiteto registrado no CAU</li>
+      <li><svg aria-hidden="true"><use href="#check-icon"/></svg>Orçamento sem compromisso</li>
+      <li><svg aria-hidden="true"><use href="#check-icon"/></svg>Atendimento em todo o estado de Goiás</li>
+      <li><svg aria-hidden="true"><use href="#check-icon"/></svg>Resposta rápida pelo WhatsApp</li>
+    </ul>
+  </div>
+</section>
+
+<!-- CHAMADA ACOLHEDORA -->
+<section class="pain" aria-labelledby="painTitle">
+  <div class="container pain-grid">
+    <div>
+      <h2 id="painTitle">Regularizar no Corpo de Bombeiros não precisa ser um peso.</h2>
+      <p class="pain-lead">Muita gente adia porque não sabe por onde começar ou tem receio de errar no projeto. É compreensível: são normas, prazos e documentos demais para quem só quer cuidar do próprio negócio.</p>
+      <p class="pain-note">Você não precisa resolver isso sozinho.</p>
+      <a href="https://wa.me/5562993156167?text=Ol%C3%A1%2C%20Felipe!%20Ainda%20n%C3%A3o%20sei%20o%20que%20o%20meu%20im%C3%B3vel%20precisa%20para%20regularizar.%20Podemos%20conversar%3F" target="_blank" rel="noopener" class="btn btn-outline" data-wa="caso">Conversar sobre o meu caso</a>
+    </div>
+    <ul class="pain-list">
+      <li><h3>Não sabe o que o seu imóvel exige?</h3><p>Eu analiso o seu caso e explico, em linguagem simples, o que é necessário e por onde começar.</p></li>
+      <li><h3>Receio de reprovação ou de refazer tudo?</h3><p>Faço o projeto conforme as normas do CBMGO e, se quiser, uma vistoria prévia, para seguir certo desde a primeira entrega.</p></li>
+      <li><h3>Sem tempo para a burocracia?</h3><p>Cuido do projeto, do protocolo e do acompanhamento. Você só me passa as informações do imóvel.</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ÁREA DE ATUAÇÃO -->
+<section class="area-atendimento bg-cream" aria-labelledby="areaTitle">
+  <div class="container area-in">
+    <div class="area-copy">
+      <span class="area-eyebrow">ÁREA DE ATUAÇÃO</span>
+      <h2 id="areaTitle">Atendo todo o estado de Goiás</h2>
+      <p>Minha base é Goiânia, mas atendo imóveis em todo o estado de Goiás, com visitas agendadas para vistorias, levantamentos e acompanhamento técnico.</p>
+    </div>
+    <figure class="area-map" aria-label="Mapa do Brasil com o estado de Goiás em destaque e Goiânia como base de atendimento">
+      <svg viewBox="0 0 290 285" role="img" aria-label="Mapa estilizado do Brasil com Goiás em destaque">
+        <text class="br-label" x="6" y="16">BRASIL</text>
+        <path class="br-shape" d="M100.1 3.8 L101.5 14.0 L102.2 23.8 L105.0 30.8 L112.0 31.5 L120.4 28.0 L126.0 26.6 L130.9 23.1 L139.3 24.5 L150.5 24.5 L157.5 15.4 L161.0 9.8 L165.9 25.2 L170.1 34.3 L172.9 42.0 L182.0 45.5 L192.5 46.9 L203.0 51.1 L210.7 57.4 L226.1 60.2 L241.5 60.2 L251.3 65.8 L261.1 72.1 L275.1 77.0 L275.1 84.0 L277.2 89.6 L277.6 97.3 L274.4 103.6 L269.5 110.6 L262.5 118.3 L256.9 126.7 L252.0 131.6 L249.2 138.6 L247.8 149.1 L248.5 158.2 L247.1 165.2 L243.6 172.2 L240.1 182.7 L234.5 193.2 L227.5 200.9 L219.1 201.6 L208.6 204.4 L197.4 208.6 L187.6 216.3 L182.0 221.9 L181.3 229.6 L180.6 236.6 L172.9 245.7 L168.0 254.8 L157.5 266.0 L147.7 276.5 L150.5 269.5 L142.1 261.8 L135.1 257.6 L128.1 252.0 L118.3 252.0 L123.9 245.7 L130.9 239.4 L143.5 231.0 L144.9 224.0 L139.3 219.8 L141.4 209.3 L136.5 207.2 L131.6 196.0 L116.2 194.6 L117.6 182.0 L117.6 173.6 L114.1 163.1 L112.0 154.7 L100.1 154.7 L99.4 142.8 L94.5 135.8 L81.9 124.6 L70.0 127.4 L64.4 117.6 L63.7 110.6 L53.9 109.9 L41.3 118.3 L27.3 117.6 L16.1 109.2 L7.0 103.6 L4.9 92.4 L11.9 86.8 L13.3 77.0 L24.5 69.3 L31.5 70.0 L32.9 56.7 L35.0 47.6 L31.5 40.6 L36.4 33.6 L49.7 25.9 L61.6 23.8 L72.1 13.3 L82.6 12.6 L93.1 3.5 Z"/>
+        <path class="go-shape" d="M170.5 130.9 L179.2 128.1 L189.0 127.4 L198.8 134.4 L196.7 144.2 L199.5 152.6 L193.2 161.0 L188.3 167.3 L179.9 168.0 L171.5 172.9 L165.2 177.8 L161.0 172.9 L155.4 167.3 L151.2 161.0 L153.3 152.6 L161.0 148.4 L163.1 140.0 L168.7 135.8 Z"/>
+        <path class="go-leader" d="M62 226H100L171.8 162.4"/>
+        <circle class="go-pulse" cx="176.8" cy="157.4" r="3.5"/>
+        <circle class="go-dot" cx="176.8" cy="157.4" r="3.5"/>
+        <text class="go-label" x="6" y="230">GOIÁS</text>
+        <text class="go-sub" x="6" y="243">BASE EM GOIÂNIA</text>
+      </svg>
+    </figure>
+  </div>
+</section>
+
+<!-- 4. SERVIÇOS -->
+<section class="sec bg-cream" id="servicos">
+  <div class="container">
+    <div class="sec-head"><h2 class="sec-title">O que eu resolvo para você</h2></div>
+    <div class="cards">
+
+      <article class="card">
+        <div class="service-icon">
+          <svg class="ic" viewBox="0 0 320 180" role="img" aria-label="Prédio sendo inspecionado por uma lupa, com cada item verificado">
+  <path class="dim" d="M20 152H300"/>
+  <rect class="fr" x="38" y="108" width="20" height="44" rx="9"/>
+  <rect class="fc" x="38" y="127" width="20" height="8" opacity=".85"/>
+  <rect class="fc" x="44" y="97" width="8" height="13" rx="2"/>
+  <path d="M40 98H60" stroke-width="4"/>
+  <path d="M55 100q16 0 16 18" stroke-width="2.5"/>
+  <rect class="soft" x="88" y="38" width="112" height="114" rx="3"/>
+  <path d="M82 38H206" stroke-width="3.5"/>
+  <rect x="102" y="52" width="26" height="22" rx="3" stroke-width="2.5"/><path class="g tick" pathLength="1" style="animation-delay:1.5s" stroke-width="4" d="M108 63 l6 6 l10 -11"/><rect x="130" y="52" width="26" height="22" rx="3" stroke-width="2.5"/><path class="g tick" pathLength="1" style="animation-delay:0.9s" stroke-width="4" d="M136 63 l6 6 l10 -11"/><rect x="158" y="52" width="26" height="22" rx="3" stroke-width="2.5"/><path class="g tick" pathLength="1" style="animation-delay:0.3s" stroke-width="4" d="M164 63 l6 6 l10 -11"/><rect x="102" y="82" width="26" height="22" rx="3" stroke-width="2.5"/><path class="g tick" pathLength="1" style="animation-delay:1.5s" stroke-width="4" d="M108 93 l6 6 l10 -11"/><rect x="130" y="82" width="26" height="22" rx="3" stroke-width="2.5"/><path class="g tick" pathLength="1" style="animation-delay:0.9s" stroke-width="4" d="M136 93 l6 6 l10 -11"/><rect x="158" y="82" width="26" height="22" rx="3" stroke-width="2.5"/><path class="g tick" pathLength="1" style="animation-delay:0.3s" stroke-width="4" d="M164 93 l6 6 l10 -11"/>
+  <rect x="130" y="118" width="26" height="34" rx="2" class="soft"/>
+  <circle class="fg" cx="150" cy="136" r="2"/>
+  <g class="scan">
+    <path class="r" d="M246 110L270 136" stroke-width="9"/>
+    <circle class="g" cx="224" cy="88" r="30" fill="rgba(255,177,98,.10)" stroke-width="5"/>
+    <path d="M204 76a22 22 0 0 1 14-10" stroke="#EEE9DF" opacity=".55" stroke-width="3"/>
+  </g>
+</svg>
+        </div>
+        <h3>Vistoria Prévia</h3>
+        <p>Inspeção antes da visita dos Bombeiros para evitar reprovações e multas.</p>
+        <a href="https://wa.me/5562993156167?text=Ol%C3%A1%2C%20Felipe!%20Quero%20uma%20vistoria%20pr%C3%A9via%20antes%20da%20visita%20dos%20Bombeiros." target="_blank" rel="noopener" class="btn btn-wa btn-block" data-wa="vistoria">Quero esse serviço</a>
+      </article>
+
+      <article class="card">
+        <div class="service-icon">
+          <svg class="ic" viewBox="0 0 320 180" role="img" aria-label="Planta de prevenção contra incêndio com sprinklers e escudo de proteção">
+  <g stroke-width="4">
+    <path class="draw2" pathLength="1" d="M50 36H206V136H50Z"/>
+    <path class="draw2" pathLength="1" stroke-width="3" d="M50 84H108M136 84H206"/>
+    <path class="draw2" pathLength="1" stroke-width="3" d="M122 36V84"/>
+    <path class="draw2" pathLength="1" stroke-width="3" d="M104 84V108M104 124V136"/>
+  </g>
+  <path class="g flow" stroke-width="2" opacity=".8" d="M86 60H164M130 60V112M78 112H160"/>
+  <g>
+    <circle class="g rip" style="animation-delay:0s" cx="86" cy="60" r="10" stroke-width="1.8"/>
+    <circle class="g rip" style="animation-delay:.65s" cx="164" cy="60" r="10" stroke-width="1.8"/>
+    <circle class="g rip" style="animation-delay:1.3s" cx="78" cy="112" r="10" stroke-width="1.8"/>
+    <circle class="g rip" style="animation-delay:1.95s" cx="160" cy="112" r="10" stroke-width="1.8"/>
+    <circle class="fg" cx="86" cy="60" r="5"/><circle class="fg" cx="164" cy="60" r="5"/>
+    <circle class="fg" cx="78" cy="112" r="5"/><circle class="fg" cx="160" cy="112" r="5"/>
+  </g>
+  <path class="g" fill="rgba(163,81,57,.38)" stroke-width="3.5" d="M258 40L284 49V76Q284 98 258 110Q232 98 232 76V49Z"/>
+  <path class="fg flick" d="M258 56C264 66 270 72 270 82C270 90 264 95 258 95C252 95 246 90 246 82C246 75 251 71 253 65C255 69 257 70 258 70C259 65 259 60 258 56Z"/>
+  <path class="fc" d="M258 80C261 84 262 86 262 88C262 91 260 92 258 92C256 92 254 91 254 88C254 85 257 83 258 80Z"/>
+</svg>
+        </div>
+        <h3>PPCI Completo</h3>
+        <p>Projeto de prevenção e combate a incêndio feito sob medida para o seu imóvel.</p>
+        <a href="https://wa.me/5562993156167?text=Ol%C3%A1%2C%20Felipe!%20Quero%20um%20or%C3%A7amento%20de%20Projeto%20de%20PPCI." target="_blank" rel="noopener" class="btn btn-wa btn-block" data-wa="ppci">Quero esse serviço</a>
+      </article>
+
+      <article class="card">
+        <div class="service-icon">
+          <svg class="ic" viewBox="0 0 320 180" role="img" aria-label="Laudo técnico com checklist concluído e carimbo de responsabilidade técnica RRT">
+  <rect class="soft" x="78" y="22" width="132" height="138" rx="8" stroke-width="3"/>
+  <rect class="fg" x="94" y="36" width="56" height="8" rx="4"/>
+  <rect class="lnd" x="156" y="36" width="36" height="8" rx="4"/>
+  <rect x="94" y="62" width="16" height="16" rx="4" stroke-width="2.5"/>
+  <path class="g tick" pathLength="1" style="animation-delay:0.3s" stroke-width="3.5" d="M97 70 l4 4 l8 -9"/>
+  <rect class="ln" x="120" y="64" width="62" height="5" rx="2.5"/><rect class="lnd" x="120" y="72" width="40" height="4" rx="2"/>
+  <rect x="94" y="86" width="16" height="16" rx="4" stroke-width="2.5"/>
+  <path class="g tick" pathLength="1" style="animation-delay:0.9s" stroke-width="3.5" d="M97 94 l4 4 l8 -9"/>
+  <rect class="ln" x="120" y="88" width="62" height="5" rx="2.5"/><rect class="lnd" x="120" y="96" width="40" height="4" rx="2"/>
+  <rect x="94" y="110" width="16" height="16" rx="4" stroke-width="2.5"/>
+  <path class="g tick" pathLength="1" style="animation-delay:1.5s" stroke-width="3.5" d="M97 118 l4 4 l8 -9"/>
+  <rect class="ln" x="120" y="112" width="62" height="5" rx="2.5"/><rect class="lnd" x="120" y="120" width="40" height="4" rx="2"/>
+  
+  <path d="M94 142q9 -14 18 0t18 0t18 0" stroke-width="2.5"/>
+  <path class="dim" d="M94 150H178" stroke-width="1.5"/>
+  <g transform="translate(196 120)"><g class="stamp">
+    <circle class="r" r="32" fill="rgba(27,38,50,.8)" stroke-width="4"/>
+    <circle class="r" r="25" stroke-width="1.5" stroke-dasharray="3 3"/>
+    <text class="tx fr" x="0" y="6" font-size="20">RRT</text>
+    <text class="tx fr" x="0" y="18" font-size="5.6" font-weight="700">RESP. TÉCNICA</text>
+  </g></g>
+</svg>
+        </div>
+        <h3>Laudos com RRT</h3>
+        <p>Laudos técnicos dos sistemas de segurança, emitidos por arquiteto com RRT.</p>
+        <a href="https://wa.me/5562993156167?text=Ol%C3%A1%2C%20Felipe!%20Preciso%20de%20um%20laudo%20t%C3%A9cnico%20com%20RRT." target="_blank" rel="noopener" class="btn btn-wa btn-block" data-wa="laudos">Quero esse serviço</a>
+      </article>
+
+      <article class="card">
+        <div class="service-icon">
+          <svg class="ic" viewBox="0 0 320 180" role="img" aria-label="Edifícios com janelas acendendo e selo de aprovação">
+  <path class="dim" d="M20 152H300"/>
+  <rect class="soft" x="40" y="92" width="56" height="60" rx="2"/>
+  <rect class="soft" x="104" y="44" width="76" height="108" rx="2"/>
+  <rect class="soft" x="188" y="78" width="62" height="74" rx="2"/>
+  <path d="M142 44V32M136 32H148" stroke-width="2.5"/>
+  <rect class="fg lit" style="animation-delay:0.00s" x="52" y="104" width="10" height="12" rx="2"/><rect class="fg lit" style="animation-delay:0.16s" x="72" y="104" width="10" height="12" rx="2"/><rect class="fg lit" style="animation-delay:0.32s" x="52" y="126" width="10" height="12" rx="2"/><rect class="fg lit" style="animation-delay:0.48s" x="72" y="126" width="10" height="12" rx="2"/><rect class="fg lit" style="animation-delay:0.35s" x="116" y="58" width="10" height="12" rx="2"/><rect class="fg lit" style="animation-delay:0.51s" x="138" y="58" width="10" height="12" rx="2"/><rect class="fg lit" style="animation-delay:0.67s" x="160" y="58" width="10" height="12" rx="2"/><rect class="fg lit" style="animation-delay:0.83s" x="116" y="80" width="10" height="12" rx="2"/><rect class="fg lit" style="animation-delay:0.99s" x="138" y="80" width="10" height="12" rx="2"/><rect class="fg lit" style="animation-delay:1.15s" x="160" y="80" width="10" height="12" rx="2"/><rect class="fg lit" style="animation-delay:1.31s" x="116" y="102" width="10" height="12" rx="2"/><rect class="fg lit" style="animation-delay:1.47s" x="138" y="102" width="10" height="12" rx="2"/><rect class="fg lit" style="animation-delay:1.63s" x="160" y="102" width="10" height="12" rx="2"/><rect class="fg lit" style="animation-delay:1.10s" x="198" y="90" width="10" height="12" rx="2"/><rect class="fg lit" style="animation-delay:1.26s" x="222" y="90" width="10" height="12" rx="2"/><rect class="fg lit" style="animation-delay:1.42s" x="198" y="112" width="10" height="12" rx="2"/><rect class="fg lit" style="animation-delay:1.58s" x="222" y="112" width="10" height="12" rx="2"/>
+  <rect class="soft" x="134" y="130" width="20" height="22" rx="2"/>
+  <g class="pop">
+    <circle class="fr" cx="260" cy="48" r="26" stroke="#1B2632" stroke-width="4"/>
+    <path class="fc tick" pathLength="1" style="animation-delay:.6s;fill:none;stroke:#EEE9DF" stroke-width="5" d="M248 49l8 8l15 -17"/>
+  </g>
+</svg>
+        </div>
+        <h3>Regularização Predial</h3>
+        <p>Regularizo imóveis já existentes com toda a documentação exigida pelos Bombeiros.</p>
+        <a href="https://wa.me/5562993156167?text=Ol%C3%A1%2C%20Felipe!%20Preciso%20regularizar%20meu%20im%C3%B3vel%20no%20Corpo%20de%20Bombeiros." target="_blank" rel="noopener" class="btn btn-wa btn-block" data-wa="regularizacao">Quero esse serviço</a>
+      </article>
+
+      <article class="card">
+        <div class="service-icon">
+          <svg class="ic" viewBox="0 0 320 180" role="img" aria-label="Certificado CERCON com selo de conformidade do Corpo de Bombeiros">
+  <defs>
+    <clipPath id="cercon-clip"><rect x="64" y="24" width="176" height="124" rx="8"/></clipPath>
+    <linearGradient id="cercon-shine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFF8EB" stop-opacity="0"/><stop offset=".5" stop-color="#FFF8EB" stop-opacity=".38"/><stop offset="1" stop-color="#FFF8EB" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect class="soft" x="64" y="24" width="176" height="124" rx="8" stroke-width="3"/>
+  <rect class="g" x="72" y="32" width="160" height="108" rx="4" stroke-width="1.5" stroke-dasharray="4 4" opacity=".55"/>
+  <path class="fg flick" d="M92 44c4 6 8 9 8 14a8 8 0 0 1 -16 0c0 -4 2 -6 4 -9c1 2 2 3 4 3c0 -3 0 -5 0 -8z"/>
+  <text class="tx fc" x="112" y="58" font-size="15" style="text-anchor:start">CERCON</text>
+  <text class="tx fc" x="112" y="70" font-size="5.8" font-weight="700" opacity=".6" style="text-anchor:start">CERTIFICADO DE CONFORMIDADE</text>
+  <rect class="ln" x="84" y="86" width="110" height="5" rx="2.5"/>
+  <rect class="ln" x="84" y="98" width="90" height="5" rx="2.5"/>
+  <rect class="lnd" x="84" y="110" width="70" height="5" rx="2.5"/>
+  <path d="M84 130q8 -10 16 0t16 0" stroke-width="2"/>
+  <path class="dim" d="M84 135H140" stroke-width="1.5"/>
+  <g transform="translate(206 118)">
+    <polygon class="fr" points="-16,14 -26,44 -10,37 -2,48 4,18" opacity=".9"/>
+    <polygon class="fr" points="16,14 26,44 10,37 2,48 -4,18" opacity=".75"/>
+    <g class="breathe">
+      <circle class="fr" r="24"/>
+      <circle class="g" r="18" stroke-width="2"/>
+      <path class="fc tick" pathLength="1" style="fill:none;stroke:#EEE9DF" stroke-width="4.5" d="M-9 0l7 7l13 -15"/>
+    </g>
+  </g>
+  <g clip-path="url(#cercon-clip)"><g class="shine"><rect x="-40" y="20" width="34" height="150" transform="skewX(-18)" fill="url(#cercon-shine)" stroke="none"/></g></g>
+</svg>
+        </div>
+        <h3>Assessoria para o CERCON</h3>
+        <p>Assessoria técnica no processo de licenciamento: documentação, projeto e acompanhamento.</p>
+        <a href="https://wa.me/5562993156167?text=Ol%C3%A1%2C%20Felipe!%20Preciso%20de%20assessoria%20t%C3%A9cnica%20para%20o%20licenciamento%20(CERCON)%20do%20meu%20im%C3%B3vel." target="_blank" rel="noopener" class="btn btn-wa btn-block" data-wa="cercon">Quero esse serviço</a>
+      </article>
+
+      <article class="card">
+        <div class="service-icon">
+          <svg class="ic" viewBox="0 0 320 180" role="img" aria-label="Carro elétrico em carregamento com escudo de proteção contra incêndio">
+  <path class="dim" d="M20 152H300"/>
+  <rect class="soft" x="36" y="38" width="48" height="104" rx="9" stroke-width="3"/>
+  <rect x="30" y="142" width="60" height="10" rx="3" class="soft"/>
+  <rect class="g" x="44" y="48" width="32" height="30" rx="4" fill="rgba(255,177,98,.12)" stroke-width="2"/>
+  <path class="fg bolt" d="M62 52L52 66H59L56 76L68 61H61Z"/>
+  <rect class="ln" x="46" y="88" width="28" height="4" rx="2"/><rect class="lnd" x="46" y="98" width="18" height="4" rx="2"/>
+  <path d="M84 108C104 108 104 126 124 120L136 113" stroke-width="5" opacity=".28"/>
+  <path class="g flow" stroke-width="3" d="M84 108C104 108 104 126 124 120L136 113"/>
+  <circle class="fg" cx="137" cy="113" r="4.5"/>
+  <rect class="soft" x="134" y="104" width="156" height="34" rx="10" stroke-width="3"/>
+  <path class="soft" d="M158 104L176 76H246L268 104" stroke-width="3"/>
+  <path d="M169 102L182 82H208V102Z M214 102V82H241L257 102Z" fill="rgba(255,177,98,.12)" stroke-width="2"/>
+  <rect class="fg" x="284" y="113" width="6" height="9" rx="2"/>
+  <circle cx="170" cy="138" r="14" fill="#1B2632" stroke-width="3"/><circle class="fc" cx="170" cy="138" r="4"/>
+  <circle cx="254" cy="138" r="14" fill="#1B2632" stroke-width="3"/><circle class="fc" cx="254" cy="138" r="4"/>
+  <rect x="168" y="34" width="64" height="26" rx="5" stroke-width="3"/>
+  <rect class="fc" x="232" y="42" width="5" height="10" rx="2"/>
+  <rect class="fg chg" x="173" y="39" width="54" height="16" rx="3"/>
+  <path d="M191 39V55M209 39V55" stroke="#1B2632" stroke-width="2" opacity=".6"/>
+  <path class="g" fill="rgba(163,81,57,.38)" stroke-width="3" d="M282 14L302 21V40Q302 56 282 64Q262 56 262 40V21Z"/>
+  <path class="fg flick" d="M282 26c4 5 7 8 7 13a7 7 0 0 1 -14 0c0 -4 2 -5 3.5 -8c1 2 2 2.5 3.5 2.5c0 -3 0 -5 0 -7.5z"/>
+</svg>
+        </div>
+        <h3>Estações de Recarga (SAVE)</h3>
+        <p>Projeto de segurança contra incêndio para estações de recarga de veículos elétricos.</p>
+        <a href="https://wa.me/5562993156167?text=Ol%C3%A1%2C%20Felipe!%20Preciso%20de%20projeto%20de%20seguran%C3%A7a%20para%20esta%C3%A7%C3%A3o%20de%20recarga." target="_blank" rel="noopener" class="btn btn-wa btn-block" data-wa="save">Quero esse serviço</a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- 6. COMO FUNCIONA -->
+<section class="sec bg-cream" id="como-funciona">
+  <div class="container">
+    <div class="sec-head"><h2 class="sec-title">Como funciona</h2></div>
+    <ol class="steps">
+      <li class="step"><h3>Contato</h3><p>Você me chama no WhatsApp e conta sobre o imóvel.</p></li>
+      <li class="step"><h3>Orçamento</h3><p>Faço o levantamento e envio o orçamento detalhado.</p></li>
+      <li class="step"><h3>Projeto e protocolo</h3><p>Elaboro o projeto e protocolo no Corpo de Bombeiros.</p></li>
+      <li class="step"><h3>Acompanhamento</h3><p>Acompanho tecnicamente o processo junto ao Corpo de Bombeiros.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- 7. PARA QUEM ATENDO -->
+<section class="sec bg-navy">
+  <div class="container">
+    <div class="sec-head"><h2 class="sec-title">Atendo quem precisa de alvará dos Bombeiros</h2></div>
+    <ul class="chips">
+      <li>Lojas e comércios</li><li>Restaurantes e bares</li><li>Clínicas e consultórios</li><li>Escolas</li>
+      <li>Indústrias e galpões</li><li>Condomínios e prédios</li><li>Academias</li><li>Hotéis e pousadas</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 8. POR QUE ME ESCOLHER -->
+<section class="sec bg-cream">
+  <div class="container">
+    <div class="sec-head"><h2 class="sec-title">Por que me escolher</h2></div>
+    <div class="why">
+      <article class="why-card">
+        <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 4c2 7 11 10 11 20a11 11 0 01-22 0c0-5 3-7 5-11 1 3 2 4 4 4 1-4 1-8 2-13z"/></svg>
+        <h3>Especialista em incêndio</h3>
+        <p>Foco em PPCI e nas normas do CBMGO.</p>
+      </article>
+      <article class="why-card">
+        <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M6 8h28v19H18l-8 7v-7H6z"/><path d="M13 16h14M13 21h8"/></svg>
+        <h3>Atendimento direto</h3>
+        <p>Você fala com o arquiteto responsável, sem intermediários.</p>
+      </article>
+      <article class="why-card">
+        <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M10 35V5"/><path d="M10 7h22l-5 8 5 8H10"/></svg>
+        <h3>Do projeto ao protocolo</h3>
+        <p>Acompanho tecnicamente todas as etapas do processo.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 9. DÚVIDAS FREQUENTES -->
+<section class="sec bg-white" id="duvidas">
+  <div class="container">
+    <div class="sec-head"><h2 class="sec-title">Dúvidas frequentes</h2></div>
+    <div class="faq">
+      <details>
+        <summary>O que é PPCI e quem precisa?</summary>
+        <p class="ans">É o projeto que define extintores, hidrantes, sinalização, saídas de emergência e outras medidas de segurança contra incêndio. Em geral, edificações comerciais, industriais e de uso coletivo precisam estar regularizadas no Corpo de Bombeiros; as exigências variam conforme área, altura e atividade.</p>
+      </details>
+      <details>
+        <summary>Quanto tempo leva?</summary>
+        <p class="ans">Depende da complexidade do imóvel e da fila de análise do Corpo de Bombeiros. Passo uma estimativa realista no orçamento.</p>
+      </details>
+      <details>
+        <summary>Quanto custa?</summary>
+        <p class="ans">Depende da área, da atividade e do risco do local. Peça um orçamento sem compromisso pelo WhatsApp.</p>
+      </details>
+      <details>
+        <summary>Meu imóvel já existe. Ainda dá para regularizar?</summary>
+        <p class="ans">Sim. A regularização de imóveis existentes é um dos meus serviços.</p>
+      </details>
+      <details>
+        <summary>Quais documentos preciso enviar?</summary>
+        <p class="ans">Normalmente o documento do imóvel, o IPTU e as plantas, se você tiver. Se não tiver as plantas, eu faço o levantamento.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- 10. OUTROS SERVIÇOS DE ARQUITETURA -->
+<section class="other-services" aria-labelledby="otherServicesTitle">
+  <div class="container">
+    <div class="other-services-head">
+      <span class="eyebrow">ALÉM DA SEGURANÇA CONTRA INCÊNDIO</span>
+      <h2 class="sec-title" id="otherServicesTitle">Seu imóvel também precisa de soluções em arquitetura?</h2>
+      <p>Do planejamento à regularização, conte com acompanhamento técnico para tirar seu projeto do papel e valorizar sua edificação.</p>
+    </div>
+    <div class="other">
+      <article class="other-item">
+        <span class="other-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 22 24 7l18 15M11 20v21h26V20M19 41V28h10v13M17 22h.1M31 22h.1"/></svg></span>
+        <div><h3>Projetos arquitetônicos</h3><p>Estudos e soluções espaciais alinhados às necessidades do seu imóvel.</p><a href="https://wa.me/5562993156167?text=Ol%C3%A1%2C%20Felipe!%20Vim%20pelo%20site%20e%20tenho%20interesse%20em%20um%20projeto%20arquitet%C3%B4nico.%20Podemos%20conversar%20sobre%20o%20meu%20terreno%20ou%20im%C3%B3vel%2C%20prazos%20e%20valores%3F" target="_blank" rel="noopener" data-wa="projetos">Solicitar atendimento <span aria-hidden="true">→</span></a></div>
+      </article>
+      <article class="other-item">
+        <span class="other-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 41V9h22v32M30 19h10v22M14 16h5M14 23h5M14 30h5M23 16h2M23 23h2M23 30h2M5 41h38"/><path d="m31 8 4-4 7 7-4 4zM29 16l-2 7 7-2"/></svg></span>
+        <div><h3>Reformas</h3><p>Melhorias funcionais e estéticas para adaptar e renovar ambientes.</p><a href="https://wa.me/5562993156167?text=Ol%C3%A1%2C%20Felipe!%20Vim%20pelo%20site%20e%20quero%20reformar%20um%20ambiente.%20Posso%20te%20contar%20o%20que%20pretendo%20mudar%20para%20voc%C3%AA%20me%20orientar%20sobre%20projeto%2C%20prazo%20e%20valores%3F" target="_blank" rel="noopener" data-wa="reformas">Conversar sobre reforma <span aria-hidden="true">→</span></a></div>
+      </article>
+      <article class="other-item">
+        <span class="other-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M12 5h18l7 7v12M30 5v8h7M12 5v38h17"/><path d="M18 20h12M18 26h12M18 32h7"/><circle cx="34" cy="34" r="9"/><path d="m30 34 3 3 5-6"/></svg></span>
+        <div><h3>Regularização de obras</h3><p>Orientação técnica para organizar documentos e adequar seu imóvel.</p><a href="https://wa.me/5562993156167?text=Ol%C3%A1%2C%20Felipe!%20Vim%20pelo%20site%20e%20preciso%20regularizar%20a%20obra%20do%20meu%20im%C3%B3vel%20(constru%C3%A7%C3%A3o%20ou%20amplia%C3%A7%C3%A3o%20sem%20projeto%20aprovado%2C%20habite-se%20ou%20metragem).%20Podemos%20conversar%20sobre%20o%20que%20falta%3F" target="_blank" rel="noopener" data-wa="obras">Regularizar meu imóvel <span aria-hidden="true">→</span></a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PARCERIAS -->
+<section class="partners" aria-labelledby="partnersTitle">
+  <div class="container partners-in">
+    <div class="partners-copy">
+      <h2 id="partnersTitle">Faço parcerias</h2>
+      <p>Trabalho em parceria com outros profissionais e empresas para entregar soluções completas em segurança contra incêndio e arquitetura. Se você atua em uma área complementar, vamos conversar.</p>
+    </div>
+    <div class="partners-side">
+      <ul class="partner-chips">
+        <li>Engenheiros e projetistas</li><li>Construtoras</li><li>Instaladores de sistemas de incêndio</li><li>Imobiliárias e administradoras</li><li>Escritórios de arquitetura</li>
+      </ul>
+      <a class="btn btn-outline" href="https://wa.me/5562993156167?text=Ol%C3%A1%2C%20Felipe!%20Vim%20pelo%20site%20e%20tenho%20interesse%20em%20uma%20parceria%20profissional.%20Podemos%20conversar%3F" target="_blank" rel="noopener" data-wa="parceria">Propor uma parceria</a>
+    </div>
+  </div>
+</section>
+
+<!-- 11. CHAMADA FINAL -->
+<section class="sec bg-navy final" id="contato">
+  <div class="container">
+    <h2>Vamos regularizar o seu imóvel?</h2>
+    <p>Me chame no WhatsApp, conte sobre o seu imóvel e eu digo o que ele precisa.</p>
+    <a href="https://wa.me/5562993156167?text=Ol%C3%A1%2C%20Felipe!%20Vim%20pelo%20site%20e%20quero%20um%20or%C3%A7amento%20de%20PPCI." target="_blank" rel="noopener" class="btn btn-wa btn-big" data-wa="geral"><svg class="ico" fill="currentColor" aria-hidden="true"><use href="#wa-icon"/></svg>Chamar no WhatsApp</a>
+  </div>
+</section>
+
+</main>
+
+<!-- 12. RODAPÉ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="brand">
+          <svg viewBox="0 0 36 36" aria-hidden="true"><rect x="2" y="2" width="22" height="22" fill="#2C3B4D"/><rect x="12" y="12" width="22" height="22" fill="#FFB162"/><rect x="12" y="12" width="12" height="12" fill="#EEE9DF"/></svg>
+          <span>Felipe Lopes Arquitetura</span>
+        </div>
+        <p>Arquiteto e Urbanista, CAU <span data-cfg="cau">Nº A317505-7</span></p>
+        <p>Goiânia, GO</p>
+      </div>
+      <div>
+        <h3>Contato</h3>
+        <ul>
+          <li><a href="https://wa.me/5562993156167?text=Ol%C3%A1%2C%20Felipe!%20Vim%20pelo%20site%20e%20quero%20um%20or%C3%A7amento%20de%20PPCI." target="_blank" rel="noopener" data-wa="geral" data-cfg-text="fone">+55 (62) 99315-6167</a></li>
+          <li><a  href="mailto:arq.felipevieira@gmail.com"><span data-cfg="email">arq.felipevieira@gmail.com</span></a></li>
+          
+        </ul>
+      </div>
+      <div>
+        <h3>Navegação</h3>
+        <ul>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#como-funciona">Como funciona</a></li>
+          <li><a href="#duvidas">Dúvidas</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© <span id="ano">2026</span> Felipe Lopes Arquitetura. Todos os direitos reservados.</span>
+      <a href="assets/politica-de-privacidade.html">Política de Privacidade (LGPD)</a>
+    </div>
+    <p class="disclaimer">Felipe Lopes Arquitetura é um escritório privado de arquitetura e consultoria técnica, sem qualquer vínculo oficial, representação direta ou parceria governamental com o Corpo de Bombeiros Militar de Goiás (CBMGO).</p>
+  </div>
+</footer>
+
+<!-- WhatsApp flutuante (computador) e barra fixa (celular) -->
+<a href="https://wa.me/5562993156167?text=Ol%C3%A1%2C%20Felipe!%20Vim%20pelo%20site%20e%20quero%20um%20or%C3%A7amento%20de%20PPCI." target="_blank" rel="noopener" class="wa-float" data-wa="geral" aria-label="Chamar no WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#wa-icon"/></svg><span class="wa-float-label">Fale comigo</span></a>
+<div class="wa-bar"><a href="https://wa.me/5562993156167?text=Ol%C3%A1%2C%20Felipe!%20Vim%20pelo%20site%20e%20quero%20um%20or%C3%A7amento%20de%20PPCI." target="_blank" rel="noopener" class="btn btn-wa btn-block" data-wa="geral"><svg class="ico" fill="currentColor" aria-hidden="true"><use href="#wa-icon"/></svg>Chamar no WhatsApp</a></div>
+
+<!-- Política de privacidade -->
+<script>
+/* ==========================================================
+   CONFIGURAÇÃO: troque apenas os dados desta seção
+   ========================================================== */
+const CONFIG = {
+  numero: "5562993156167",          // 55 + DDD + número, só dígitos
+  email: "arq.felipevieira@gmail.com",
+  cau: "Nº A317505-7",
+  instagram: "",                    // opcional: ex. "@seuinstagram" (se vazio, o link some do rodapé)
+  mensagens: {
+    geral:        "Olá, Felipe! Vim pelo site e quero um orçamento de PPCI.",
+    ppci:         "Olá, Felipe! Quero um orçamento de Projeto de PPCI.",
+    regularizacao:"Olá, Felipe! Preciso regularizar meu imóvel no Corpo de Bombeiros.",
+    cercon:       "Olá, Felipe! Preciso de assessoria técnica para o licenciamento (CERCON) do meu imóvel.",
+    laudos:       "Olá, Felipe! Preciso de um laudo técnico com RRT.",
+    vistoria:     "Olá, Felipe! Quero uma vistoria prévia antes da visita dos Bombeiros.",
+    save:         "Olá, Felipe! Preciso de projeto de segurança para estação de recarga.",
+    duvida:       "Olá, Felipe! Tenho uma dúvida sobre PPCI e regularização.",
+    arquitetura:  "Olá, Felipe! Quero conversar sobre um projeto de arquitetura.",
+    caso:         "Olá, Felipe! Ainda não sei o que o meu imóvel precisa para regularizar. Podemos conversar?",
+    projetos: "Olá, Felipe! Vim pelo site e tenho interesse em um projeto arquitetônico. Podemos conversar sobre o meu terreno ou imóvel, prazos e valores?",
+    reformas: "Olá, Felipe! Vim pelo site e quero reformar um ambiente. Posso te contar o que pretendo mudar para você me orientar sobre projeto, prazo e valores?",
+    obras: "Olá, Felipe! Vim pelo site e preciso regularizar a obra do meu imóvel (construção ou ampliação sem projeto aprovado, habite-se ou metragem). Podemos conversar sobre o que falta?",
+    parceria: "Olá, Felipe! Vim pelo site e tenho interesse em uma parceria profissional. Podemos conversar?"
+  }
+};
+
+/* ========== Links de WhatsApp ========== */
+function linkWhats(chave){
+  const texto = CONFIG.mensagens[chave] || CONFIG.mensagens.geral;
+  return "https://wa.me/" + CONFIG.numero + "?text=" + encodeURIComponent(texto);
+}
+document.querySelectorAll("[data-wa]").forEach(function(el){
+  el.href = linkWhats(el.dataset.wa);
+  el.target = "_blank";
+  el.rel = "noopener";
+});
+
+/* ========== Dados de contato (rodapé e política) ========== */
+function formatarFone(n){
+  const d = n.replace(/\D/g, "");
+  if (d.length === 13) return "+" + d.slice(0,2) + " (" + d.slice(2,4) + ") " + d.slice(4,9) + "-" + d.slice(9);
+  if (d.length === 12) return "+" + d.slice(0,2) + " (" + d.slice(2,4) + ") " + d.slice(4,8) + "-" + d.slice(8);
+  return n;
+}
+document.querySelectorAll("[data-cfg]").forEach(function(el){
+  el.textContent = CONFIG[el.dataset.cfg];
+});
+document.querySelectorAll("[data-cfg-text='fone']").forEach(function(el){
+  el.textContent = formatarFone(CONFIG.numero);
+});
+document.querySelectorAll("[data-cfg-mail]").forEach(function(el){
+  el.href = "mailto:" + CONFIG.email;
+});
+document.querySelectorAll("[data-cfg-insta]").forEach(function(el){
+  if (!CONFIG.instagram) { var li = el.closest("li"); if (li) li.style.display = "none"; return; }
+  el.href = "https://instagram.com/" + CONFIG.instagram.replace("@", "");
+});
+document.getElementById("ano").textContent = new Date().getFullYear();
+
+/* ========== Menu no celular ========== */
+const menuBtn = document.getElementById("menuBtn");
+const nav = document.getElementById("nav");
+function fecharMenu(){
+  nav.classList.remove("open");
+  menuBtn.setAttribute("aria-expanded", "false");
+}
+menuBtn.addEventListener("click", function(){
+  const aberto = nav.classList.toggle("open");
+  menuBtn.setAttribute("aria-expanded", String(aberto));
+});
+nav.querySelectorAll("a").forEach(function(a){ a.addEventListener("click", fecharMenu); });
+document.addEventListener("keydown", function(e){ if (e.key === "Escape") fecharMenu(); });
+
+/* ========== FAQ: abre uma pergunta por vez ========== */
+const perguntas = document.querySelectorAll(".faq details");
+perguntas.forEach(function(item){
+  item.addEventListener("toggle", function(){
+    if (item.open) perguntas.forEach(function(outro){ if (outro !== item) outro.open = false; });
+  });
+});
+
+/* ========== Política de privacidade ========== */
+
+
+</script>
+</body>
+</html>
